@@ -5,7 +5,8 @@ import GlobalStyles from './styles/GlobalStyles'
 // import Lesson07 from './lessons/Lesson07/Lesson07'
 // import Lesson08 from './lessons/Lesson08/Lesson08'
 //import Lesson10 from './lessons/Lesson10/Lesson10'
-import Homework10 from "./homeworks/Homework10/Homework10";
+//import Homework10 from "./homeworks/Homework10/Homework10";
+import Lesson11 from './lessons/Lesson11/Lesson11'
 
 //homeworks
 // import Homework08 from './homeworks/Homework08/Homework08'
@@ -28,7 +29,7 @@ function App() {
       {/* <Lesson08 /> */}
       {/* <Homework08 /> */}
       {/* Topic: Control components, useEffect */}
-      <Homework10 />
+      <Lesson11 />
     </>
   )
 }
