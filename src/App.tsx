@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 //import Lesson10 from './lessons/Lesson10/Lesson10'
 //import Homework10 from "./homeworks/Homework10/Homework10";
 //import Lesson11 from './lessons/Lesson11/Lesson11'
+import Homework12 from './homeworks/Homework12/Homework12'; 
 //---Lesson 13
 import Layout from './components/Layout/Layout'
 import Home from './pages/Home/Home'
@@ -30,21 +31,8 @@ import User from './pages/Users/components/User/User'
 function App() {
 
   return (
-    //BrowserRouter - компонент из react-router-dom, который позволяет нам работать с маршрутами
-    // по всему приложению
-    <BrowserRouter>
+    <>
       <GlobalStyles />
-      <Layout>
-        {/* Routes - собирает все маршруты приложения */}
-        <Routes>
-          {/* Route - компонент, в который передаётся маршрут и контент, 
-         который нужно отрисовать по этому маршруту в Layout */}
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/users' element={<Users />} />
-          <Route path='/users/user' element={<User />} />
-        </Routes>
-      </Layout>
       {/* --Topic: TypeScript - Introduction */}
       {/* <Lesson06/> */}
       {/* <Consultation03 /> */}
@@ -61,10 +49,8 @@ function App() {
       {/* <Lesson10 /> */}
       {/* <Homework10 /> */}
       {/* --Topic: formik, yup */}
-      {/* <Lesson12 /> */}
-      {/* <Homework12/> */}
-    </BrowserRouter>
+      <Homework12 />
+    </>
   )
 }
-
-export default App
+export default App;
