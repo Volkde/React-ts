@@ -2,25 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Clients() {
-    return (
-        <div>
-        <h2>Clients </h2>
-        <ul>
+  return (
+    <div>
+      <h2>Clients</h2>
+      <ul>
         <li>
-            <Link to="/pages/Clients/components/Facebook">Facebook</Link>
+          <Link to="/clients/facebook">Facebook</Link>
         </li>
-
         <li>
-            <Link to="/pages/Clients/components/Google">Google</Link>
+          <Link to="/clients/google">Google</Link>
         </li>
-
         <li>
-            <Link to="/pages/Clients/components/Netflix">Netflix</Link>
+          <Link to="/clients/netflix">Netflix</Link>
         </li>
-        </ul>
-
-        </div>
-    );
+      </ul>
+    </div>
+  );
 }
 
 export default Clients;

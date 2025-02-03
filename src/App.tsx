@@ -17,9 +17,9 @@ import Users from './pages/Users/Users'
 import User from './pages/Users/components/User/User'
 
 import Clients from "./pages/Clients/Clients";
-import Facebook from "./pages/Clients/components/Facebook/Facebook";
-import Google from "./pages/Clients/components/Google/Google";
-import Netflix from "./pages/Clients/components/Netflix/Netflix";
+import Facebook from "./pages/Clients/components/facebook/facebook";
+import Google from "./pages/Clients/components/google/google";
+import Netflix from "./pages/Clients/components/netflix/netflix";
 
 
 
@@ -51,9 +51,10 @@ function App() {
           <Route path='/users' element={<Users />} />
           <Route path='/users/user' element={<User />} />
           <Route path="/clients" element={<Clients />} />
-          <Route path='/pages/Clients/components/Facebook' element={<Facebook />} />
-          <Route path='/pages/Clients/components/Google' element={<Google />} />
-          <Route path='/pages/Clients/components/Netflix' element={<Netflix />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/facebook" element={<Facebook />} />
+          <Route path="/clients/google" element={<Google />} />
+          <Route path="/clients/netflix" element={<Netflix />} />
 
 
       

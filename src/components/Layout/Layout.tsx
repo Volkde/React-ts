@@ -41,8 +41,12 @@ import {
               Users
             </StyledNavLink>
 
-            <StyledNavLink to="/clients">Clients</StyledNavLink>
-
+            <StyledNavLink
+            to="/clients"
+            style={({ isActive }) => ({ textDecoration: isActive ? "underline" : "none" })}
+         >
+            Clients
+          </StyledNavLink>
           </NavContainer>
         </Header>
         <Main>{children}</Main>
