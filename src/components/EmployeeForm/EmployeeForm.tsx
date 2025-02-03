@@ -40,6 +40,13 @@ function EmployeeForm() {
     },
   });
 
+  const ErrorText = styled.div`
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+`;
+
+
   return (
 
     <EmployeeFormContainer onSubmit={formik.handleSubmit}>
@@ -89,8 +96,9 @@ function EmployeeForm() {
 
         <label htmlFor="terms">I accept the terms</label>
       </CheckboxContainer>
+      {formik.errors.terms && <ErrorText>{formik.errors.terms}</ErrorText>}
 
-      {formik.errors.terms && <div style={{ color: "red" }}>{formik.errors.terms}</div>}
+
 
       <Button type="submit" name="Create" />
 
