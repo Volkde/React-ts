@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+import styled from "@emotion/styled";
+
 import {
     LayoutComponent,
     Header,
@@ -13,7 +16,8 @@ import {
     return (
       <LayoutComponent>
         <Header>
-          <LogoContainer></LogoContainer>
+        <LogoContainer onClick={() => window.location.href = "/"}></LogoContainer> 
+
           <NavContainer>
             <StyledNavLink
               to='/'
@@ -36,11 +40,14 @@ import {
               }>
               Users
             </StyledNavLink>
+
+            <StyledNavLink to="/clients">Clients</StyledNavLink>
+
           </NavContainer>
         </Header>
         <Main>{children}</Main>
         <Footer>
-          <LogoContainer></LogoContainer>
+        <LogoContainer onClick={() => window.location.href = "/"}></LogoContainer> 
         </Footer>
       </LayoutComponent>
     )
